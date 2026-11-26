@@ -8,15 +8,16 @@ export const site = {
   substackApi: 'https://thepaperworkengineer.substack.com/api/v1/posts?limit=12',
   substackFeed: 'https://thepaperworkengineer.substack.com/feed',
   substackSubscribe: 'https://thepaperworkengineer.substack.com/subscribe',
+  substackArchive: 'https://thepaperworkengineer.substack.com/archive',
   instagram: 'https://www.instagram.com/the.paperwork.engineer/',
   linkedin: 'https://www.linkedin.com/in/faizanjavedsheikh',
   /** Public contact address, shown under "Let's talk" and on the privacy page. */
   email: 'faizan@thepaperworkengineer.com',
   /** Last real edit to each page's own text, for the sitemap. Update when you change the copy. */
-  pageUpdated: { home: '2026-11-14', privacy: '2026-11-14' },
+  pageUpdated: { home: '2026-11-26', privacy: '2026-11-14' },
   /** How many of the newest Substack posts and Instagram reels the homepage shows. */
-  postsOnHomepage: 3,
-  reelsOnHomepage: 3,
+  postsOnHomepage: 5,
+  reelsOnHomepage: 5,
 };
 
 export const socials = [

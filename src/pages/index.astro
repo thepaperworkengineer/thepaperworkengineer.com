@@ -32,7 +32,7 @@ const fmt = new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', y
 const heroSizes = '(min-width: 1920px) 30vw, (min-width: 66rem) min(40vw, 35rem), (min-width: 42rem) 33vw, calc(100vw - 2rem)';
 const sideSizes = '(min-width: 1920px) 30vw, (min-width: 66rem) min(40vw, 35rem), (min-width: 42rem) 33vw, calc(100vw - 2rem)';
 const headSizes = '(min-width: 1920px) 14vw, (min-width: 66rem) 16rem, (min-width: 42rem) 12rem, 1px';
-const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width: 42rem) 30vw, calc(100vw - 4rem)';
+const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width: 42rem) 44vw, 82vw';
 ---
 <Base
   title="The Paperwork Engineer · Medical Device QA/RA, Explained"
@@ -49,7 +49,7 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
           <div class="tpe-stack" style="gap: 2rem">
             <p class="tpe-eyebrow">A newsletter and reels by Faizan</p>
             <h1 id="hero-h" class="tpe-h1">The inner workings of <span class="tpe-nw-sm"><span class="tpe-nw">medical device</span> <span class="tpe-nb">QA/RA,</span></span> <span class="tpe-nw">minus the boredom.</span></h1>
-            <p class="tpe-lede">Short, honest lessons from inside <span class="tpe-nw">a medical device</span> quality system. For the newcomer <span class="tpe-nw">lost in acronyms,</span> and the veteran who has seen <span class="tpe-nw">every finding twice.</span></p>
+            <p class="tpe-lede">Short, honest lessons on quality assurance and regulatory affairs, from inside <span class="tpe-nw">a medical device</span> quality system. For the newcomer <span class="tpe-nw">lost in acronyms,</span> and the veteran who has seen <span class="tpe-nw">every finding twice.</span></p>
             <div class="tpe-btnset">
               <a class="tpe-btn" href={site.calendly}>Book a free 30-minute call <Icon name="launch" /></a>
               <a class="tpe-link" href="#writing">Read the newsletter <Icon name="arrow-down" /></a>
@@ -73,7 +73,7 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
           <Art src={carrying} class="tpe-art tpe-art-left" sizes={sideSizes} alt="The Paperwork Engineer carrying a tall stack of pastel binders" />
           <div class="tpe-stack">
             <p class="tpe-eyebrow">01 — Why I do this</p>
-            <h2 id="why-h" class="tpe-h2"><span class="tpe-nw-md">I trained to <span class="tpe-nw">design machines.</span></span> <span class="tpe-nw-md">I <span class="tpe-nw">ended up</span> <span class="tpe-nw">designing paperwork.</span></span></h2>
+            <h2 id="why-h" class="tpe-h2"><span class="tpe-nw-md">Trained to <span class="tpe-nw">design machines.</span></span> <span class="tpe-nw-md"><span class="tpe-nw">Ended up</span> <span class="tpe-nw">designing paperwork.</span></span></h2>
             <p class="tpe-body">I’m a mechanical engineer by training. My first quality system wasn’t even mine. It was my boss’s, written for the FDA’s old QSR and an older ISO 13485.</p>
             <p class="tpe-body">He reviewed every procedure I rewrote. That’s where I learned to think in <span class="tpe-nw">risk, not checklists.</span></p>
             <p class="tpe-body">Some of my procedures were unrealistic. We passed the audit anyway. Then our own internal audit caught them, and <span class="tpe-nw">we fixed them.</span></p>
@@ -114,6 +114,9 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
               </a>
             </li>
           ))}
+          <li class="tpe-more-li">
+            <a class="tpe-more" href={site.substackArchive}><span class="tpe-more-t">More on Substack</span><span class="tpe-more-s">Every post so far, newest first.</span><Icon name="launch" /></a>
+          </li>
         </ul>
         <div class="tpe-sub">
           <Art src={asleep} sizes="(min-width: 1920px) 28vw, (min-width: 42rem) 33vw, calc(100vw - 2rem)" alt="The Paperwork Engineer asleep on a pile of pastel books" />
@@ -139,12 +142,12 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
           </div>
         </div>
         {reels.length > 0 ? (
-          <ul class="tpe-reels" style={`--tpe-reel-cols: ${reels.length}`}>
+          <ul class="tpe-reels">
             {reels.map((r) => (
               <li>
                 <a class="tpe-reel" href={r.url}>
                   <span class="tpe-reel-m">
-                    {r.img && <Art src={r.img} alt="" sizes="(min-width: 1920px) 30vw, (min-width: 42rem) 32vw, 64vw" style={r.position ? `object-position: ${r.position}` : undefined} />}
+                    {r.img && <Art src={r.img} alt="" sizes="(min-width: 1920px) 15vw, (min-width: 66rem) 16vw, (min-width: 42rem) 30vw, 64vw" style={r.position ? `object-position: ${r.position}` : undefined} />}
                     <span class="tpe-play"><Icon name="play" size={20} /></span>
                   </span>
                   <span class="tpe-reel-x">
@@ -155,6 +158,9 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
                 </a>
               </li>
             ))}
+            <li class="tpe-more-li">
+              <a class="tpe-more" href={site.instagram}><span class="tpe-more-t">More on Instagram</span><span class="tpe-more-s">Every reel so far, newest first.</span><Icon name="launch" /></a>
+            </li>
           </ul>
         ) : null}
       </div>
@@ -166,7 +172,7 @@ const cardSizes = '(min-width: 1920px) 28vw, (min-width: 66rem) 30vw, (min-width
         <div class="tpe-split tpe-split-r">
           <Art src={coffee} class="tpe-art tpe-art-left" sizes={sideSizes} alt="The Paperwork Engineer over coffee with a client and a messy stack of papers" />
           <div class="tpe-stack">
-            <p class="tpe-eyebrow">04 — Work together</p>
+            <p class="tpe-eyebrow">04 — Consulting</p>
             <h2 id="talk-h" class="tpe-h2" style="font-size: clamp(2.25rem, 1.75rem + 2vw, 3.75rem)">Let’s talk.</h2>
             <p class="tpe-lede">Stuck on a submission, <span class="tpe-nw">prepping for an audit,</span> or living with a QMS <span class="tpe-nw">that’s grown messy?</span> Book a <span class="tpe-nw">free 30-minute call.</span> Bring the problem. Leave with <span class="tpe-nw">an honest read on it</span> and <span class="tpe-nw">a clear next step.</span></p>
             <p class="tpe-body tpe-muted">Fair warning: ask me to “just build a QMS” and my first question <span class="tpe-nw">will be,</span> <span class="tpe-nw">“At what cost?”</span></p>

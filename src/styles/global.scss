@@ -236,7 +236,31 @@ section[id] { scroll-margin-top: $spacing-09; }
   svg { color: var(--cds-link-primary); } }
 
 // ---------- Post cards (Carbon clickable tile) ----------
-.tpe-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: $spacing-05; margin: 0; padding: 0; list-style: none; }
+// Posts and reels: a swipe row on phones and tablets, a grid on desktop. Each list ends with a "More on" tile.
+.tpe-cards, .tpe-reels {
+  display: grid; grid-auto-flow: column; gap: $spacing-04; margin: 0 (-$spacing-05); padding: 0 $spacing-05 $spacing-03; list-style: none;
+  overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scroll-padding-inline: $spacing-05;
+  > li { scroll-snap-align: start; }
+  @include breakpoint(md) { gap: $spacing-05; margin-inline: -$spacing-07; padding-inline: $spacing-07; scroll-padding-inline: $spacing-07; }
+  @include breakpoint(lg) { grid-auto-flow: row; overflow: visible; margin: 0; padding: 0; }
+}
+.tpe-cards { grid-auto-columns: 82%;
+  @include breakpoint(md) { grid-auto-columns: 44%; }
+  @include breakpoint(lg) { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.tpe-reels { grid-auto-columns: 64%;
+  @include breakpoint(md) { grid-auto-columns: 30%; }
+  @include breakpoint(lg) { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+// The "More on" tile sits in the last column of its row on desktop
+.tpe-more-li { @include breakpoint(lg) { grid-column: auto / -1; } }
+.tpe-more {
+  height: 100%; min-height: 12rem; background: var(--cds-tag-background-purple); color: var(--cds-tag-color-purple);
+  padding: $spacing-06; display: flex; flex-direction: column; gap: $spacing-03; text-decoration: none;
+  &:hover { background: #d9cff0; color: var(--cds-tag-color-purple); }
+  &:hover .tpe-more-t, &:focus-visible .tpe-more-t { text-decoration: underline; }
+  svg { margin-top: auto; align-self: flex-end; }
+}
+.tpe-more-t { font-size: 1.25rem; line-height: 1.4; }
+.tpe-more-s { font-size: 0.9375rem; line-height: 1.4; }
 .tpe-card {
   height: 100%; background: var(--cds-layer-01); padding: $spacing-05 $spacing-05 $spacing-06;
   display: flex; flex-direction: column; gap: $spacing-05; color: var(--cds-text-primary); text-decoration: none;
@@ -260,16 +284,6 @@ section[id] { scroll-margin-top: $spacing-09; }
 .tpe-sub-body { align-self: center; padding: clamp(#{$spacing-06}, #{$spacing-05} + 1.5vw, #{$spacing-07}); display: flex; flex-direction: column; gap: $spacing-05; }
 
 // ---------- Reels ----------
-.tpe-reels {
-  // one column per reel (up to 3) from tablet up; on phones a swipeable row of larger tiles
-  display: grid; grid-template-columns: repeat(var(--tpe-reel-cols, 4), minmax(0, 1fr)); gap: $spacing-05; margin: 0; padding: 0; list-style: none;
-  @include breakpoint-down(md) {
-    grid-template-columns: none; grid-auto-flow: column; grid-auto-columns: 64%; gap: $spacing-04;
-    overflow-x: auto; scroll-snap-type: x mandatory; overscroll-behavior-x: contain;
-    margin-inline: -$spacing-05; padding-inline: $spacing-05; scroll-padding-inline: $spacing-05; padding-bottom: $spacing-03;
-    > li { scroll-snap-align: start; }
-  }
-}
 .tpe-reel {
   // cover on top, title and date underneath (like the post cards)
   position: relative; display: flex; flex-direction: column; gap: $spacing-04; color: var(--cds-text-primary); text-decoration: none;

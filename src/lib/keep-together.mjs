@@ -32,7 +32,7 @@ const SEPARATORS = new Set(['·', '|', '—', '–', '&', '/', '→']);
 
 const BLOCK_TAGS = new Set('address article aside blockquote body button dd details div dl dt figcaption figure footer form h1 h2 h3 h4 h5 h6 header label li main nav ol p section summary table td th tr ul'.split(' '));
 // Inline tags this site styles as blocks (found by checking the computed layout).
-const BLOCK_CLASSES = ['tpe-skip', 'tpe-word', 'tpe-hcta', 'tpe-btn', 'tpe-link', 'tpe-stat-n', 'tpe-stat-l', 'tpe-author-name', 'tpe-tag', 'tpe-meta', 'tpe-reel-t', 'tpe-reel-d', 'tpe-svc', 'tpe-svc-d'];
+const BLOCK_CLASSES = ['tpe-skip', 'tpe-word', 'tpe-hcta', 'tpe-btn', 'tpe-link', 'tpe-stat-n', 'tpe-stat-l', 'tpe-author-name', 'tpe-tag', 'tpe-meta', 'tpe-reel-t', 'tpe-reel-d', 'tpe-svc', 'tpe-svc-d', 'tpe-more-t', 'tpe-more-s'];
 // Flex containers: text inside them is one flex item, so a hyphen <span> must not split it into several.
 const FLEX_CLASSES = ['tpe-btn', 'tpe-link', 'tpe-tag', 'tpe-author-name', 'tpe-hcta', 'tpe-meta'];
 const SKIP_TAGS = new Set('head script style svg math template textarea pre code noscript title helmet'.split(' '));
