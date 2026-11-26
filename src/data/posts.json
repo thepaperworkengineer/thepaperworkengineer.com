@@ -15,9 +15,42 @@
     "i-thought-there-was-one-standard": {
       "tag": "Standards",
       "position": "50% 55%"
+    },
+    "6-rules-for-not-drowning-in-your": {
+      "tag": "QMS"
+    },
+    "the-folder-was-older-than-my-job": {
+      "tag": "QMS"
+    },
+    "5-ways-i-made-myself-the-bottleneck": {
+      "tag": "QMS"
     }
   },
   "fallback": [
+    {
+      "title": "7 Hoops You Don’t Have to Jump Through",
+      "url": "https://thepaperworkengineer.substack.com/p/7-hoops-you-dont-have-to-jump-through",
+      "date": "2026-11-26T14:36:34Z",
+      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/8b4145fd-a789-4da0-91cb-601f402f031b_2752x1536.jpeg"
+    },
+    {
+      "title": "6 Rules for Not Drowning in Your Own QMS",
+      "url": "https://thepaperworkengineer.substack.com/p/6-rules-for-not-drowning-in-your",
+      "date": "2026-11-22T14:03:44Z",
+      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/723abf15-cbe2-4646-8c76-d8ab05d5a5e4_2752x1536.jpeg"
+    },
+    {
+      "title": "The Folder Was Older Than My Job",
+      "url": "https://thepaperworkengineer.substack.com/p/the-folder-was-older-than-my-job",
+      "date": "2026-11-18T15:20:49Z",
+      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/6a105204-ec42-4642-bc8b-a71c196ece32_2048x2048.jpeg"
+    },
+    {
+      "title": "5 Ways I Made Myself the Bottleneck of My Own QMS",
+      "url": "https://thepaperworkengineer.substack.com/p/5-ways-i-made-myself-the-bottleneck",
+      "date": "2026-11-15T06:25:11Z",
+      "cover": "https://substack-post-media.s3.amazonaws.com/public/images/e4d7097e-6905-4143-94b3-31a3e24b9c6d_2048x2048.jpeg"
+    },
     {
       "title": "Your QMS Is a Suit. Stop Buying It Off the Rack.",
       "url": "https://thepaperworkengineer.substack.com/p/your-qms-is-a-suit-stop-buying-it",

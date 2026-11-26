@@ -2,6 +2,34 @@
   "_readme": "Your Instagram reels, in any order: the homepage shows the newest 3 by 'date' (YYYY-MM-DD). 'image' is a cover still saved in src/assets/reels/ (portrait works best). 'title' is optional. 'position' (optional) moves the crop, e.g. '50% 75%' to show more of the bottom. While this list is empty, the Reels section shows only the Instagram link.",
   "reels": [
     {
+      "title": "6 Rules for Not Drowning in Your Own QMS",
+      "url": "https://www.instagram.com/p/DgFraoZCX4J/",
+      "image": "DgFraoZCX4J.jpg",
+      "date": "2026-11-23",
+      "position": "50% 50%"
+    },
+    {
+      "title": "The Folder Was Older Than My Job",
+      "url": "https://www.instagram.com/p/Df-O9ImI7DG/",
+      "image": "Df-O9ImI7DG.jpg",
+      "date": "2026-11-20",
+      "position": "50% 50%"
+    },
+    {
+      "title": "5 Ways I Made Myself the Bottleneck of My Own QMS",
+      "url": "https://www.instagram.com/p/Df4pkX2Ct0m/",
+      "image": "Df4pkX2Ct0m.jpg",
+      "date": "2026-11-18",
+      "position": "50% 50%"
+    },
+    {
+      "title": "Your QMS Is a Suit. Stop Buying It Off the Rack.",
+      "url": "https://www.instagram.com/p/DfyKxujifTp/",
+      "image": "DfyKxujifTp.jpg",
+      "date": "2026-11-15",
+      "position": "50% 50%"
+    },
+    {
       "title": "I Inherited a QMS. Nobody Was Following It.",
       "url": "https://www.instagram.com/p/DfsAckJCuJy/",
       "image": "DfsAckJCuJy.jpg",
